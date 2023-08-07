@@ -8,4 +8,4 @@
 
   - name: print result
     debug:
-    var: userResult
+      var: userResult
