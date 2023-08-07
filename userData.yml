@@ -4,3 +4,8 @@
   
   tasks:
   - userData: name=Gaurav age=18
+    register: userResult
+
+  - name: print result
+    debug:
+    var: userResult
