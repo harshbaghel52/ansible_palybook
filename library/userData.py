@@ -16,7 +16,7 @@ def main():
     print(hostname)
 
     data = dict(
-        output="your data has stored successfully :-) ",
+        output="hostname is {} : your data has stored successfully :-) ".format(hostname),
     )
     try:
        # file = open("/var/lib/awx/projects/_36__rayank_git_project/userdata.txt","r")
