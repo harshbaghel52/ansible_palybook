@@ -8,5 +8,5 @@
 
   - name: print result
     debug:
-      var:  "{{ userResult.stdout }}"
+      var: userResult
      
