@@ -1,6 +1,7 @@
 import json
 from ansible.module_utils.basic import AnsibleModule
 import sys
+import socket
 def main():
     module = AnsibleModule(
         argument_spec = dict(
@@ -11,7 +12,8 @@ def main():
 
     name = module.params['name']
     age = module.params['age']
-
+    hostname = socket.gethostname()
+    print(hostname)
 
     data = dict(
         output="your data has stored successfully :-) ",
