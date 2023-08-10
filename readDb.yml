@@ -9,9 +9,9 @@
       community.mysql.mysql_query:
         login_host: "{{ host }}"
         login_user: "linroot"
-          #login_user: "root"
+        #login_user: "root"
         login_password: "&rU1HRBh4W9UHkDb"
-          #login_password: "IRONMAN"
+        #login_password: "IRONMAN"
         login_db: Ansible
         query: SELECT * FROM Ansible.cmdb_ci;
       register: query_result
