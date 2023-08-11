@@ -6,7 +6,7 @@
     #host: "194.195.112.205:30517"
   tasks:
     - name: Update apt cache
-      apt:
+      yum:
         update_cache: yes
       tags: update
 
