@@ -5,6 +5,17 @@
     host: "db.vishal-chauhan.in"
     #host: "194.195.112.205:30517"
   tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+      tags: update
+
+    - name: Install python3-dev, libmysqlclient-dev, and build-essential
+      apt:
+        name: ['python3-dev', 'libmysqlclient-dev', 'build-essential']
+        state: present
+      tags: install
+
     - name: Install mysqlclient
       pip:
         name: mysqlclient
