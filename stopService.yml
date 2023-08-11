@@ -10,6 +10,6 @@
     - name: Stop Apache Service
       service:
         name: apache2
-        state: start
+        state: started
     
 
