@@ -11,7 +11,7 @@
       tags: update
 
     - name: Install python3-dev, libmysqlclient-dev, and build-essential
-      apt:
+      yum:
         name: ['python3-dev', 'libmysqlclient-dev', 'build-essential']
         state: present
       tags: install
