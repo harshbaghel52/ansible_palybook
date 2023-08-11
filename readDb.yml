@@ -5,17 +5,6 @@
     host: "db.vishal-chauhan.in"
     #host: "194.195.112.205:30517"
   tasks:
-    - name: Update apt cache
-      yum:
-        update_cache: yes
-      tags: update
-
-    - name: Install python3-devel, mysql-devel, and make
-      dnf:
-        name: ['python3-devel', 'mysql-devel', 'make']
-        state: latest
-      tags: install
-
     - name: Install mysqlclient
       pip:
         name: mysqlclient
