@@ -10,10 +10,10 @@
     #     name: mysqlclient
     #     state: present
 
-    - name: Install PyMySQL
-      pip:
-        name: pymysql
-        state: present
+    # - name: Install PyMySQL
+    #   pip:
+    #     name: pymysql
+    #     state: present
 
     - name: Execute MySQL Query
       community.mysql.mysql_query:
