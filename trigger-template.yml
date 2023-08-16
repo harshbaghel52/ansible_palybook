@@ -11,4 +11,4 @@
         tower_password: rinki
         validate_certs: False  # Set to True if you want to validate SSL certificates
         job_template: rayank-readCSV
-~
+
