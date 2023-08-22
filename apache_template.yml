@@ -5,7 +5,7 @@
 # of plays, with each play being a dictionary
 - name: Apache Webservers Demo
   hosts: all
-  remote_user: ubuntu
+  remote_user: root
   become: yes
   gather_facts: yes
   
