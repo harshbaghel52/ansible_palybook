@@ -18,7 +18,7 @@
       debug:
          msg: "Name is {{ Name }}"
 
-    - name:
+    - name: create a demo file
       file:
         path: /root/file1
         state: touch
