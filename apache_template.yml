@@ -20,7 +20,7 @@
 
     - name:
       file:
-        path: /home/ubuntu/file1
+        path: /root/file1
         state: touch
 
     # - name: Install apache Service
